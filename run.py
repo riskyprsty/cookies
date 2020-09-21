@@ -22,9 +22,8 @@ def kukis():
 	if "c_user" in p.cookies.get_dict():
                 print "\n \033[1;91m[*] Result Cookies\n\n"
 		print(p.cookies.get_dict())
-                file_json = open(p.cookies.get_dict())
-                data = json.loads(file_json.read())
-                print(f"Nama: {c_user}")
+                data = json.loads(p.cookies.get_dict())
+                print data['c_user']
                 print "\n \033[1;93m[*] Copy Cookies diatas"
                 sys.exit()
         if "checkpoint" in a:
