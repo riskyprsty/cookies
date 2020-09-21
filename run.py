@@ -34,11 +34,10 @@ logo=('''\n\n
 
 
 while True:
-        os.system('clear')
         print(logo)
 	print "\033[1;93m[1] GET Cookies"
 	print "\033[1;93m[2] Keluar\n"
-	r=raw_input("?: Choose: ")
+	r=raw_input("\033[1;93m Pilih: ")
 	if r=="":
 		os.system("clear")
 	elif r =="1":
