@@ -9,7 +9,7 @@
 # Python : Versi 2.0 #
 #########################################################
 
-import requests,bs4,sys,os
+import requests,bs4,sys,os,json
 import requests,sys
 from multiprocessing.pool import ThreadPool
 
@@ -22,7 +22,9 @@ def kukis():
 	if "c_user" in p.cookies.get_dict():
                 print "\n \033[1;91m[*] Result Cookies\n\n"
 		print(p.cookies.get_dict())
-                open("result.txt","a+").write(sd)
+                file_json = open(p.cookies.get_dict())
+                data = json.loads(file_json.read())
+                print(f"Nama: {c_user}")
                 print "\n \033[1;93m[*] Copy Cookies diatas"
                 sys.exit()
         if "checkpoint" in a:
