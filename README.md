@@ -1,0 +1,2 @@
+# cookies
+#GET COOKIES SIMPLE
