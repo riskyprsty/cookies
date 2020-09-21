@@ -22,7 +22,7 @@ def kukis():
                 print "\n \033[1;91m[*] Result Cookies\n\n"
 		print(p.cookies.get_dict())
                 kuks = open('cok.json', 'w')
-                kuks.write(p.cookies.get_dict())
+                kuks.write(p.cookies.get_dict)
                 print "\n \033[1;93m[*] Copy Cookies diatas"
                 sys.exit()
         if "checkpoint" in a:
