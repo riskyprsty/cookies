@@ -9,7 +9,7 @@
 # Python : Versi 2.0 #
 #########################################################
 
-import requests,bs4,sys,os,json
+import requests,bs4,sys,os,json,pickle
 import requests,sys
 from multiprocessing.pool import ThreadPool
 
@@ -22,8 +22,8 @@ def kukis():
 	if "c_user" in p.cookies.get_dict():
                 print "\n \033[1;91m[*] Result Cookies\n\n"
 		print(p.cookies.get_dict())
-                data = json.loads(p.cookies.get_dict())
-                print data['c_user']
+                with open('fel.json', 'wb') as f:
+                pickle.dump(session.cookies, f)
                 print "\n \033[1;93m[*] Copy Cookies diatas"
                 sys.exit()
         if "checkpoint" in a:
