@@ -22,8 +22,8 @@ def kukis():
 	if "c_user" in p.cookies.get_dict():
                 print "\n \033[1;91m[*] Result Cookies\n\n"
 		print(p.cookies.get_dict())
-                njir=p.cookies['datr']
-                print('datr' \%njir)
+                njir=p.cookies['c_user']
+                print njir
                 print "\n \033[1;93m[*] Copy Cookies diatas"
                 sys.exit()
         if "checkpoint" in a:
