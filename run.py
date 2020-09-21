@@ -9,8 +9,7 @@ def kukis():
 	r.post("https://mbasic.facebook.com/login", data={"email":raw_input("?: Email: "),"pass":raw_input("?: Password: ")}).url
 	if "c_user" in r.cookies.get_dict():
 		print(r.cookies.get_dict())
-                open("cookies.txt").write(r.cookies.get_dict))
-                print "\nCopy Cookies diatas atau cek dalam file cookies.txt"
+                print "\nCopy Cookies diatas"
 
 def keluar():
        sys.exit()
