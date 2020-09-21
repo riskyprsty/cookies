@@ -19,8 +19,10 @@ def kukis():
 	p.headers.update({"User-Agent":"Mozilla/5.0 (Linux; Android 6.0.1; Lenovo-A6020l36 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.93 Mobile Safari/537.36"})
 	a=p.post("https://mbasic.facebook.com/login", data={"email":raw_input("\033[1;92m[*] Email: "),"pass":raw_input("\033[1;92m[*] Password: ")}).url
 	if "c_user" in p.cookies.get_dict():
+                print "\n \033[1;91m[*] Result Cookies\n\n"
 		print(p.cookies.get_dict())
                 print "\n \033[1;93m[*] Copy Cookies diatas"
+                sys.exit()
         if "checkpoint" in a:
                 print "\n \033[1;91m[!] Akun terkena checkpoint atau sandi salah"
 
@@ -34,6 +36,7 @@ logo=('''\n\n
 
 
 while True:
+        os.system("clear")
         print(logo)
 	print "\033[1;93m[1] GET Cookies"
 	print "\033[1;93m[2] Keluar\n"
