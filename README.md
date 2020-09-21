@@ -1,6 +1,7 @@
 # Cookies
 ## GET COOKIES SIMPLE
 • Jalankan tanpa vpn seperti biasanya
+
 • Lebih baik loginkan terlebih dahulu di browser chrome (mbasic) untuk menghindari checkpoint
 
 # INSTALLATION
