@@ -44,11 +44,12 @@ def kukis():
 def keluar():
        sys.exit()
 
-done = False
- 
-#loding
-def animate():
-    for c in itertools.cycle(['|', '/', '-', '\\']):
+def browser():
+     print "\033[1;93m{∆} Login terlebih dahulu di browser agar cookie valid dan tidak checkpoint (jangan dilogout sebelum mendapatkan cookies)"
+     time.sleep(1)
+     print "\033[1;93m{~} Lalu kembali lagi dan login ulang disini"
+     time.sleep(1)
+     for c in itertools.cycle(['|', '/', '-', '\\']):
         if done:
             break
         sys.stdout.write('\rMenunggu Login browser ' + c)
@@ -60,13 +61,6 @@ t = threading.Thread(target=animate)
 t.start()
  
 time.sleep(10)
-done = True
-
-def browser():
-     print "\033[1;93m{∆} Login terlebih dahulu di browser agar cookie valid dan tidak checkpoint (jangan dilogout sebelum mendapatkan cookies)"
-     time.sleep(1)
-     print "\033[1;93m{~} Lalu kembali lagi dan login ulang disini"
-     time.sleep(1)
 
 logo=('''\n\n
   \033[1;94m••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••\033[0m
@@ -85,7 +79,6 @@ while True:
 	elif r =="1":
                 browser()
                 os.system("termux-open https://mbasic.facebook.com")
-                animate()
 		kukis()
                 
 	elif r=="2":
