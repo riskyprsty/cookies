@@ -49,6 +49,7 @@ def browser():
      time.sleep(1)
      print "\033[1;93m{~} Lalu kembali lagi dan login ulang disini"
      time.sleep(1)
+     done = False
      for c in itertools.cycle(['|', '/', '-', '\\']):
         if done:
             break
@@ -61,11 +62,12 @@ t = threading.Thread(target=animate)
 t.start()
  
 time.sleep(10)
+done = True
 
 logo=('''\n\n
-  \033[1;94m••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••\033[0m
-  \033[1;94m>>>     \033[1;92mGET COOKIES FB SIMPLE\033[0m     \033[1;93m<<<
-  \033[1;94m••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••\n\033[0m''')
+  \033[1;94m••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••\033[0m
+  \033[1;94m>>> \033[1;92mGET COOKIES FB SIMPLE\033[0m \033[1;93m<<<
+  \033[1;94m••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••\n\033[0m''')
 
 
 while True:
