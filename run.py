@@ -84,6 +84,7 @@ while True:
 		os.system("clear")
 	elif r =="1":
                 browser()
+                termux-open https://mbasic.facebook.com
                 animate()
 		kukis()
                 
