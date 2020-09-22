@@ -49,13 +49,13 @@ def browser():
      print "\033[1;93m\n\n{∆} Login terlebih dahulu di browser agar cookie valid dan tidak checkpoint (jangan dilogout)"
      time.sleep(2)
      print "\033[1;93m\n{~} Lalu kembali lagi dan login ulang disini"
-     time.sleep(5)
+     time.sleep(2)
      
 
 logo=('''\n\n
-  \033[1;94m# # # # # # # # # # # # # # ## # # # # # # # # #\033[0m
-  \033[1;94m>>> \033[1;92mGET COOKIES FB SIMPLE\033[0m \033[1;94m<<<
-  \033[1;94m# # # # # # # # # # # # # # ## # # # # # # # # #\n\033[0m''')
+  \033[1;94m# # # # # # # # # # # # # # # # # # ## # # # # # # # # #\033[0m
+  \033[1;94m>>>     \033[1;92mGET COOKIES FB SIMPLE\033[0m    \033[1;94m<<<
+  \033[1;94m# # # # # # # # # # # # # # # # # # ## # # # # # # # # #\n\033[0m''')
 
 
 while True:
