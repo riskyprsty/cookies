@@ -21,9 +21,19 @@ def kukis():
         sd=p.cookies.get_dict()
 	if "c_user" in p.cookies.get_dict():
                 print "\n \033[1;91m[*] Result Cookies\n\n"
-		print(p.cookies.get_dict())
-                njir=p.cookies['c_user']
-                print njir
+                ab=p.cookies['datr']
+                cd=p.cookies['sb']
+                ef=p.cookies['c_user']
+                gh=p.cookies['xs']
+                ij=p.cookies['fr']
+                xd = "datr="
+                sr = "sb="
+                jr = "c_user="
+                id = "xs="
+                ex = "fr="
+                peler = "; "
+                hasil = xd + ab + peler + sr + cd + peler + jr + ef + peler + id + gh + peler + ex + ij + peler
+                print(hasil)
                 print "\n \033[1;93m[*] Copy Cookies diatas"
                 sys.exit()
         if "checkpoint" in a:
