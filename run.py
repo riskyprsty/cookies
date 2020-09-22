@@ -1,16 +1,18 @@
 #!usr/bin/python2.7
 # coding=utf-8
 
-#########################################################
 # Title : Facebook Get Cookies Simple #
 # Author : Risky Prsty #
 # Github : https://github.com/riskyprsty #
 # FB : Risky Prsty ~ Alwxsky Cherenkov #
 # Python : Versi 2.0 #
-#########################################################
+# # # # # # # # # # # # # # #
+# # # # # #
+# # # # # #
 
 import requests,bs4,sys,os,json,pickle
 import requests,sys
+import itertools,threading,time,sys
 from multiprocessing.pool import ThreadPool
 
 def kukis():
@@ -42,10 +44,34 @@ def kukis():
 def keluar():
        sys.exit()
 
+done = False
+ 
+#loding
+def animate():
+    for c in itertools.cycle(['|', '/', '-', '\\']):
+        if done:
+            break
+        sys.stdout.write('\rMenunggu Login browser ' + c)
+        sys.stdout.flush()
+        time.sleep(0.1)
+    sys.stdout.write('\rSilahkan Login disini     ')
+ 
+t = threading.Thread(target=animate)
+t.start()
+ 
+time.sleep(10)
+done = True
+
+def browser():
+     print "\033[1;93m{∆} Login terlebih dahulu di browser agar cookie valid dan tidak checkpoint (jangan dilogout sebelum mendapatkan cookies)"
+     time.sleep(1)
+     print "\033[1;93m{~} Lalu kembali lagi dan login ulang disini"
+     time.sleep(1)
+
 logo=('''\n\n
-  \033[1;93m####################################\033[0m
-  \033[1;93m>>>     \033[1;92mGET COOKIES FB SIMPLE\033[0m     \033[1;93m<<<
-  \033[1;93m####################################\n\033[0m''')
+  \033[1;94m••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••\033[0m
+  \033[1;94m>>>     \033[1;92mGET COOKIES FB SIMPLE\033[0m     \033[1;93m<<<
+  \033[1;94m••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••\n\033[0m''')
 
 
 while True:
@@ -57,7 +83,10 @@ while True:
 	if r=="":
 		os.system("clear")
 	elif r =="1":
+                browser()
+                animate()
 		kukis()
+                
 	elif r=="2":
 		keluar()
 	else:
