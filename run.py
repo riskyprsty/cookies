@@ -46,7 +46,7 @@ def keluar():
        sys.exit()
 
 def browser():
-     print "\033[1;93m\n\n{∆} Login terlebih dahulu di browser agar cookie valid dan tidak checkpoint (jangan dilogout sebelum mendapatkan cookies)"
+     print "\033[1;93m\n\n{∆} Login terlebih dahulu di browser agar cookie valid dan tidak checkpoint (jangan dilogout)"
      time.sleep(2)
      print "\033[1;93m\n{~} Lalu kembali lagi dan login ulang disini"
      time.sleep(5)
