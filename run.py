@@ -16,7 +16,7 @@ import itertools,threading,time,sys
 from multiprocessing.pool import ThreadPool
 
 def kukis():
-        print "\033[1;94m{∆} Silahkan Login"
+        print "\033[1;94m\n{∆} Silahkan Login\n"
 	p=requests.Session()
 	p.get("https://mbasic.facebook.com/login")
 	p.headers.update({"User-Agent":"Mozilla/5.0 (Linux; Android 6.0.1; Lenovo-A6020l36 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.93 Mobile Safari/537.36"})
@@ -46,16 +46,16 @@ def keluar():
        sys.exit()
 
 def browser():
-     print "\033[1;93m{∆} Login terlebih dahulu di browser agar cookie valid dan tidak checkpoint (jangan dilogout sebelum mendapatkan cookies)"
-     time.sleep(1)
-     print "\033[1;93m{~} Lalu kembali lagi dan login ulang disini"
+     print "\033[1;93m\n\n{∆} Login terlebih dahulu di browser agar cookie valid dan tidak checkpoint (jangan dilogout sebelum mendapatkan cookies)"
      time.sleep(2)
+     print "\033[1;93m\n{~} Lalu kembali lagi dan login ulang disini"
+     time.sleep(5)
      
 
 logo=('''\n\n
-  \033[1;94m••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••\033[0m
-  \033[1;94m>>> \033[1;92mGET COOKIES FB SIMPLE\033[0m \033[1;93m<<<
-  \033[1;94m••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••\n\033[0m''')
+  \033[1;94m# # # # # # # # # # # # # # ## # # # # # # # # #\033[0m
+  \033[1;94m>>> \033[1;92mGET COOKIES FB SIMPLE\033[0m \033[1;94m<<<
+  \033[1;94m# # # # # # # # # # # # # # ## # # # # # # # # #\n\033[0m''')
 
 
 while True:
