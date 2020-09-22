@@ -16,6 +16,7 @@ import itertools,threading,time,sys
 from multiprocessing.pool import ThreadPool
 
 def kukis():
+        print "\033[1;94m{∆} Silahkan Login"
 	p=requests.Session()
 	p.get("https://mbasic.facebook.com/login")
 	p.headers.update({"User-Agent":"Mozilla/5.0 (Linux; Android 6.0.1; Lenovo-A6020l36 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.93 Mobile Safari/537.36"})
@@ -48,21 +49,8 @@ def browser():
      print "\033[1;93m{∆} Login terlebih dahulu di browser agar cookie valid dan tidak checkpoint (jangan dilogout sebelum mendapatkan cookies)"
      time.sleep(1)
      print "\033[1;93m{~} Lalu kembali lagi dan login ulang disini"
-     time.sleep(1)
-     done = False
-     for c in itertools.cycle(['|', '/', '-', '\\']):
-        if done:
-            break
-        sys.stdout.write('\rMenunggu Login browser ' + c)
-        sys.stdout.flush()
-        time.sleep(0.1)
-    sys.stdout.write('\rSilahkan Login disini     ')
- 
-t = threading.Thread(target=animate)
-t.start()
- 
-time.sleep(10)
-done = True
+     time.sleep(2)
+     
 
 logo=('''\n\n
   \033[1;94m••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••\033[0m
